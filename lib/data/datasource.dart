@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:advicely/data/model.dart';
 import 'package:http/http.dart' as http;
 
-/// génère un conseil et retourne le texte traduit en français
+
 Future<Conseil> genererConseil() async {
   final client = http.Client();
   final uri = "https://api.api-ninjas.com/v1/advice";
@@ -36,6 +36,6 @@ Future<String> _translateToFrench(String text) async {
       }
     }
   } catch (_) {}
-  // en cas d'erreur on retourne le texte original
+  
   return text;
 }
