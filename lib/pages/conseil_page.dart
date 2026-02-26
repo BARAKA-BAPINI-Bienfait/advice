@@ -43,7 +43,7 @@ class _ConseilPageState extends State<ConseilPage> {
               SizedBox(height: 30),
               Center(
                 child: SvgPicture.asset(
-                  "assets/img/advicely.svg",
+                  "assets/img/advicly.svg",
                   height: 86,
                   width: 90,
                   colorFilter: ColorFilter.mode(
