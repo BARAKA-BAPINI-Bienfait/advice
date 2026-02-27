@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 Future<Conseil> genererConseil() async {
   final client = http.Client();
   final uri = "https://api.api-ninjas.com/v1/advice";
-  final cle = "8n9iCSnjttpez72C8ixpdUBHYwyKVrDcYDSWxXAW";
+  final cle = "lCeNDJ8YsW8SlaX147dcYikzEII3X1F11ZYDscuD";
   final reponse = await client.get(Uri.parse(uri), headers: {"X-Api-Key": cle});
   final json =
       jsonDecode(utf8.decode(reponse.bodyBytes))
